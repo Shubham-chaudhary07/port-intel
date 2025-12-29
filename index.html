@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Port-Intel Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Port-Intel Dashboard</h1>
+
+<div class="buttons">
+  <button class="start">Start Monitoring</button>
+  <button class="stop">Stop</button>
+</div>
+
+<div class="stats">
+  <div id="total">Total Attacks: 0</div>
+</div>
+
+<img src="/static/graph.png" class="graph">
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>IP</th>
+      <th>Port</th>
+      <th>Severity</th>
+    </tr>
+  </thead>
+  <tbody id="logTable"></tbody>
+</table>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
